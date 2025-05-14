@@ -16,6 +16,7 @@ export async function progressbar(page: Page): Promise<void> {
 
     if (percentage >= 67) {
       await page.click(selectors.button);
+      break;
     }
 
     await page.waitForTimeout(100);

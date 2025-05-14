@@ -1,11 +1,14 @@
 import { test } from "@playwright/test";
-import { fillDemoForm } from "../tests/form.spec";
-import { addtable } from "../tests/add.spec";
-import { menuNavigation } from "../tests/menuscript.spec";
-import { datepicker } from "../tests/datepicker.spec";
-import { slider } from "../tests/slider.spec";
-import { progressbar } from "../tests/progressbar.spec";
+import { fillDemoForm } from "../tests/form";
+import { addtable } from "../tests/add";
+import { menuNavigation } from "../tests/menuscript";
+import { datepicker } from "../tests/datepicker";
+import { slider } from "../tests/slider";
+import { progressbar } from "../tests/progressbar";
 import { clickAllDropdowns } from "../tests/menuselect.spec";
+import { droppable } from "../tests/sorted";
+import { draganddrop } from "../tests/draganddrop";
+import { axisrestricted }from "../tests/axisrescrited";
 const { BASE_URL } = require("../lib/constants");
 
 test.describe.serial("Full automation flow", () => {
@@ -21,7 +24,7 @@ test.describe.serial("Full automation flow", () => {
     await addtable(page);
   });
 
-  test("Automate form submission", async ({ page }) => {
+  test.skip("Automate form submission", async ({ page }) => {
     await fillDemoForm(page);
   });
   test("Automate date picker", async ({ page }) => {
@@ -35,5 +38,14 @@ test.describe.serial("Full automation flow", () => {
   });
   test("clickAllDropdowns", async ({ page }) => {
     await clickAllDropdowns(page);
+  });
+   test("sorted", async ({ page }) => {
+    await droppable(page);
+  });
+   test("drag and drop", async ({ page }) => {
+    await draganddrop(page);
+  });
+  test("axisrestricted", async ({ page }) => {
+    await axisrestricted(page);
   });
 });

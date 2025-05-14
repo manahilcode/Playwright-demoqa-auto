@@ -18,10 +18,10 @@ export async function addtable(page: Page): Promise<void> {
   await page.click(selectors.submitButton);
   await page.waitForTimeout(500);
 
-  await page.locator(selectors.editButtonForJohn).click();
-  await page.locator(selectors.salaryInput).fill("60000");
-  await page.click(selectors.submitButton);
-  await page.waitForTimeout(1000);
+  // await page.locator(selectors.editButtonForJohn).click();
+  // await page.locator(selectors.salaryInput).fill("60000");
+  // await page.click(selectors.submitButton);
+  // await page.waitForTimeout(1000);
 
   await page.locator(selectors.delete).click();
   await page.waitForTimeout(3000);

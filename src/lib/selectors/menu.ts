@@ -8,6 +8,6 @@ export const selectors={
     multiplemenu:'//div[contains(@class, "css-1wa3eu0-placeholder") and text()="Select..."]',
     standart:'//select[@id="cars"]',
     selectblue:'//div[contains(@id, "react-select") and text()="Blue"]',
-    selectgreen:'//div[contains(@id, "react-select") and text()="Blue"]',
+    selectgreen:'//div[@class="css-12jo7m5"and text()="Green"]',
     
 }
