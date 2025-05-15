@@ -9,6 +9,7 @@ import { clickAllDropdowns } from "../tests/menuselect.spec";
 import { droppable } from "../tests/sorted";
 import { draganddrop } from "../tests/draganddrop";
 import { axisrestricted }from "../tests/axisrescrited";
+import { login } from "../tests/login";
 const { BASE_URL } = require("../lib/constants");
 
 test.describe.serial("Full automation flow", () => {
@@ -47,5 +48,8 @@ test.describe.serial("Full automation flow", () => {
   });
   test("axisrestricted", async ({ page }) => {
     await axisrestricted(page);
+  });
+  test("login", async ({ page }) => {
+    await login(page);
   });
 });
