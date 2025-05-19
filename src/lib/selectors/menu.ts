@@ -9,5 +9,7 @@ export const selectors={
     standart:'//select[@id="cars"]',
     selectblue:'//div[contains(@id, "react-select") and text()="Blue"]',
     selectgreen:'//div[@class="css-12jo7m5"and text()="Green"]',
+    groupone:'//div[contains(@id, "react-select") and text()="Group 2, option 1"]',
+    Dr:'//div[contains(@id, "react-select") and text()="Dr."]',
     
 }

@@ -17,13 +17,13 @@ export async function clickAllDropdowns(page: Page): Promise<void> {
   await page.locator(selectors.selectvalue).click();
   await page
     .locator(
-      '//div[contains(@id, "react-select") and text()="Group 2, option 1"]'
+      selectors.groupone
     )
     .click();
 
   await page.locator(selectors.selectone).click();
   await page
-    .locator('//div[contains(@id, "react-select") and text()="Dr."]')
+    .locator(selectors.Dr)
     .click();
 
   await page
