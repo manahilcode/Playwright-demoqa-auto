@@ -15,6 +15,9 @@ import { Frames } from "../tests/Frames";
 import {nestedframe} from "../tests/nestedframe";
 import {searchbooks} from "../tests/searchbooks";
 import {modeldilouges} from "../tests/modeldiloges";
+import {link} from "../tests/link";
+import {browse} from "../tests/browse";
+import {BrowserWindow} from "../tests/browserwindow";
 const { BASE_URL } = require("../lib/constants");
 
 test.describe.serial("Full automation flow", () => {
@@ -72,4 +75,14 @@ test.describe.serial("Full automation flow", () => {
   test("modeldilouges", async ({ page }) => {
     await modeldilouges(page);
   });
+  test("link", async ({ page }) => {
+    await link(page);
+  });
+  test("browse", async ({ page }) => {
+    await browse(page);
+  });
+   test("BrowserWindow", async ({ page }) => {
+    await BrowserWindow(page);
+  });
 });
+

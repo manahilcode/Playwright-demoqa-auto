@@ -24,7 +24,8 @@ export async function fillDemoForm(page: Page): Promise<void> {
   await page.locator(formSelectors.sportsCheckboxLabel).click();
   await page.waitForTimeout(500);
 
-  const filePath = path.resolve(__dirname, "../assets/img/sample.jpg");
+ const filePath = path.resolve(__dirname, "../../assets/pic.png");
+
 
   await page.locator(formSelectors.uploadPicture).setInputFiles(filePath);
   await page.waitForTimeout(500);
