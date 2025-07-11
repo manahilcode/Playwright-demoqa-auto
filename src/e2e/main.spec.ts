@@ -1,23 +1,23 @@
 import { test } from "@playwright/test";
 import { fillDemoForm } from "../tests/form";
 import { addtable } from "../tests/add";
-import { menuNavigation } from "../tests/menuscript";
-import { datepicker } from "../tests/datepicker";
+import { menuNavigation } from "../tests/menu-script";
+import { datepicker } from "../tests/date-picker";
 import { slider } from "../tests/slider";
-import { progressbar } from "../tests/progressbar";
-import { clickAllDropdowns } from "../tests/menuselect";
+import { progressbar } from "../tests/progress-bar";
+import { clickAllDropdowns } from "../tests/menu-select";
 import { droppable } from "../tests/sorted";
-import { draganddrop } from "../tests/draganddrop";
-import { axisrestricted }from "../tests/axisrescrited";
+import { draganddrop } from "../tests/drag-and-drop";
+import { axisrestricted }from "../tests/axis-rescrited";
 import { login } from "../tests/login";
 import { alert } from "../tests/alerts";
-import { Frames } from "../tests/Frames";
-import {nestedframe} from "../tests/nestedframe";
-import {searchbooks} from "../tests/searchbooks";
-import {modeldilouges} from "../tests/modeldiloges";
+import { Frames } from "../tests/frames";
+import {nestedframe} from "../tests/nested-frame";
+import {searchbooks} from "../tests/search-books";
+import {modeldilouges} from "../tests/model-diloges";
 import {link} from "../tests/link";
 import {browse} from "../tests/browse";
-import {BrowserWindow} from "../tests/browserwindow";
+import {BrowserWindow} from "../tests/browser-window";
 const { BASE_URL } = require("../lib/constants");
 
 test.describe.serial("Full automation flow", () => {

@@ -1,5 +1,5 @@
 import { Page } from "@playwright/test";
-import { selectors } from "../lib/selectors/loginselector";
+import { selectors } from "../lib/selectors/login-selector";
 
 export async function login(page: Page): Promise<void> {
   await page.locator(selectors.elementsCard).click();

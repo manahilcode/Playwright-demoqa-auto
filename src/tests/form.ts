@@ -1,5 +1,5 @@
 import { Page , expect} from "@playwright/test";
-import { formSelectors } from "../lib/selectors/formSelector";
+import { formSelectors } from "../lib/selectors/form-selector";
 import path from "path";
 
 export async function fillDemoForm(page: Page): Promise<void> {
@@ -46,3 +46,5 @@ export async function fillDemoForm(page: Page): Promise<void> {
   await expect(page.getByText('Thanks for submitting the form')).toBeVisible();
 
 }
+
+
